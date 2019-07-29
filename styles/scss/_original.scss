@@ -4255,6 +4255,28 @@ body.page-id-18 #design-lifestyle-contact-form {
 	color: $medgray;
 }
 
+#dgs {
+	a {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	span {
+		margin-right: 4px;
+	}
+	svg {
+		width: 100px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#dgs {
+		a {
+			justify-content: flex-end;
+		}
+	}
+}
+
 /*404 Page*/
 
 .error404 #page-heading-content {
