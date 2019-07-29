@@ -1,0 +1,118 @@
+
+
+/* B L O G */
+#blog-hero {
+	height: 450px;
+	background-size: cover;
+	background-position: 50% 40%;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 2rem;
+}
+.blog,
+.single,
+.archive {
+	#page-heading {
+		height: inherit;
+	}
+}
+.blog-hero-content {
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.blog-hero-content-inner {
+	margin-left: 0;
+	border: solid 1px #f0ede9;
+	background-color: rgba(250, 250, 250, 0.7);
+	padding: 20px;
+	max-width: 300px;
+}
+.blog-hero-content-inner h4 {
+	font-size: 38px;
+	line-height: 42px;
+	margin-bottom: 0;
+}
+.blog-hero-content-inner h6 {
+	margin-bottom: 0.5rem;
+}
+.page-template-blog .posts-wrapper,
+.single .posts-wrapper,
+.archive .posts-wrapper {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.single #page-header-content-cta {
+	display: none;
+}
+.single #page-heading-content {
+	display: flex;
+	align-items: flex-end !important;
+	justify-content: flex-start;
+	max-width: 1024px;
+}
+.single #page-heading-content h1 {
+	// left: 0;
+	// bottom: -3rem;
+}
+.single #page-heading-content h4 {
+	display: block;
+	text-align: left;
+	width: 100%;
+	color: black;
+}
+#sidebar .sidebar-box:nth-child(6) {
+	visibility: visible;
+}
+#sidebar .sidebar-box:nth-child(5) h4 {
+	border-bottom: 1px solid #eee;
+}
+.sidebar-box.gform_widget {
+	// margin-top: -60px;
+}
+.single {
+	.post-thumb {
+		@include background-image;
+		width: 100%;
+		padding-top: 100%;
+	}
+}
+
+/* S E A R C H  F I X E S */
+
+.search #page-heading,
+.search-results #page-heading {
+	min-height: 100px;
+	display: flex;
+	align-items: center;
+}
+.search #page-heading #archive-title,
+.search-results #page-heading #archive-title {
+	flex:0 0 auto;
+}
+.search #main,
+.search-results #main {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.search a.next,
+.search-results a.next {
+	margin-top: 40px;
+}
+
+/* A R C H I V E S */
+.archive #page-heading {
+	height: 180px;
+	background-color: #f0f3f3;
+	margin-bottom: 2rem;
+}
+.archive #page-heading h1 {
+	width: 1024px;
+	margin: 0 auto;
+}
+@media screen and (max-width: 1022px) {
+	.archive #page-heading h1 {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

@@ -1,0 +1,122 @@
+// E X P E R I E N C E S
+.page-template-experiences {
+  #page-heading {
+    background-position: center;
+    @media screen and (max-width: 767px) {
+      background-position: 35% center;
+    }
+  }
+  #page-heading-content {
+    h1 {
+      margin-bottom: 0.25rem;
+    }
+    h6 {
+      margin-bottom: 0;
+    }
+  }
+}
+#exp-individuals {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  // background-color: $blue;
+  // color: $white;
+  text-align: center;
+  .exp-option {
+    margin-bottom: 2.5rem;
+  }
+}
+
+#exp-individuals {
+  form {
+    max-width: 360px;
+    margin-top: 3rem;
+  }
+  .gfield_label,
+  .gfield_required,
+  .gform_wrapper .gfield_label {
+    display: none;
+  }
+  .hide_label .gfield_label {
+    visibility: hidden;
+  }
+
+  input[type="text"] {
+    border: none;
+    border-bottom: solid 1px #c0c0c0;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0;
+    padding-bottom: 2px;
+    text-indent: 10px;
+    font-family: $cardo;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+  }
+
+  input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #e1e6e5;
+    font-family: $fjalla;
+    font-size: 10px;
+    color: $black;
+    letter-spacing: 1px;
+    padding: 15px 45px;
+    border: 0;
+    text-transform: uppercase;
+  }
+}
+
+#exp-orgs {
+  background-color: $tan;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  h4 {
+    line-height: 1.5;
+  }
+}
+
+#exp-boxes {
+  @include parallax-blocks;
+  padding-top: 130px;
+  padding-bottom: 3rem;
+  height: auto;
+  .block-top {
+    float: left;
+    padding-top: 55px;
+  }
+  .block-bottom {
+    float: right;
+  }
+  .circle-title {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #d0d0d0;
+    background-color: rgba($white, 0.45);
+    position: absolute;
+    top: -115px;
+    left: calc(50% - 75px);
+    font-family: $fjalla;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (max-width: 543px) {
+    .block-top,
+    .block-bottom {
+      float: none;
+      top: 0;
+      bottom: 0;
+    }
+  }
+}

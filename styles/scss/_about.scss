@@ -1,0 +1,123 @@
+// A B O U T  J O S H U A
+
+#about-bio {
+	padding-top: 2rem;
+  padding-bottom: 2rem;
+  #about-bio-content {
+    // padding-bottom: 19px;
+    overflow: hidden;
+  }
+  #about-bio-content-block {
+    float: left;
+    clear: both;
+    width: 100%;
+  }
+}
+
+#about-parallax {
+  @include parallax;
+  height: 900px;
+}
+
+#about-3 {
+  padding-left: 5%;
+  padding-right: 5%;
+  #about-3-content-1,
+  #about-3-content-2 {
+    max-width: 600px;
+    padding-top: 40px;
+    overflow: hidden;
+  }
+}
+
+#about-press {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	.press-items {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	.press-item {
+		flex: 0 0 auto;
+		text-align: center;
+		margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .press-item-top {
+    max-width: 200px;
+  }
+	.press-item-content {
+		p, a {
+			font-family: $cardo;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			max-width: 240px;
+			margin: 0 auto 2rem;
+		}
+	}
+}
+
+// #about-3-content-block {
+// 	display: flex;
+// 	max-width: 380px;
+// 	min-height: 37px;
+// 	margin-top: 36px;
+// 	background-image: url(../../images/top-quote-top-bg.png), url(../../images/top-quote-bottom-bg.png);
+// 	background-repeat: no-repeat, no-repeat;
+// 	background-position: top center, bottom center;
+// 	padding-top: 31px;
+// 	font-size: 12px;
+// 	line-height: 19px;
+// 	text-align: center;
+// 	text-transform: uppercase;
+// 	letter-spacing: 2.25px;
+// 	padding-bottom: 30px;
+// 	justify-content: center;
+// 	align-items: center;
+// }
+
+// #about-3-content-block {
+// 	max-width: 400px;
+// 	margin-top: 3px;
+// 	margin-bottom: 6px;
+// }
+
+// #about-3-items {
+// 	width: 100%;
+// }
+
+// #about-3-item {
+// 	float: left;
+// 	width: 25%;
+// 	padding-left: 20px;
+// 	padding-right: 20px;
+// 	text-align: center;
+// 	box-sizing: border-box;
+// }
+
+// #about-3-item a {
+// 	display: flex;
+// 	border: solid 1px $lighttan;
+// 	border-radius: 50%;
+// 	width: 106px;
+// 	height: 106px;
+// 	font-family: 'Fjalla One', sans-serif;
+// 	font-size: 20px;
+// 	line-height: 22px;
+// 	color: $black;
+// 	font-weight: 400;
+// 	text-align: center;
+// 	text-transform: uppercase;
+// 	box-sizing: border-box;
+// 	justify-content: center;
+// 	align-items: center;
+// 	margin-bottom: 8px;
+// }
+
+// #about-3-item a:hover {
+// 	background-color: $robin;
+// 	color: $white;
+// }
+

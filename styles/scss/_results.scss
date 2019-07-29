@@ -1,0 +1,53 @@
+// R E S U L T S
+#results-graphic {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    flex: 1 1 auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    max-width: 250px;
+    flex-basis: 130px;
+    margin: 0 auto;
+    h5 {
+      display: flex;
+      margin: 0 auto;
+      border: solid 1px $lighttan;
+      border-radius: 50%;
+      width: 132px;
+      height: 132px;
+      font-size: 17px;
+      line-height: 22px;
+      text-align: center;
+      text-transform: uppercase;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 11px;
+      padding-bottom: 0;
+    }
+  }
+}
+
+#results-testimonials {
+  background-color: $tan;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  .testimonial {
+    margin-bottom: 5rem;
+  }
+  .headshot {
+    @include background-image;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}

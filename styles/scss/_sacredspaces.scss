@@ -1,0 +1,190 @@
+.page-template-sacred-spaces {
+  #page-heading {
+    background-position: center bottom;
+    min-height: 935px;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    #page-heading-content {
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 20px;
+    }
+    #page-heading-inner {
+      // top: 200px;
+      // background: transparent;
+      // border: none;
+      // padding: 0;
+    }
+
+    .blog-white-header {
+      // position: absolute;
+      width: 100%;
+      // bottom: 0;
+      background: rgba(255, 255, 255, 0.75);
+      // min-height: 590px;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      h4 {
+        // text-transform: uppercase;
+        // padding-top: 75px;
+      }
+      h6 {
+        // font-size: 15px;
+      }
+    }
+  }
+
+  .x-bg {
+    background: url('../../images/blog-x-bg.png') no-repeat center center;
+    min-height: 305px;
+    max-width: 420px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    h6 {
+      text-align: center;
+      font-size: 15px;
+      text-transform: uppercase;
+      line-height: 26px;
+      letter-spacing: 2px;
+      margin-bottom: 0;
+    }
+    .x-block-top {
+      max-width: 200px;
+      // margin: 20px auto 0;
+      flex: 0 1 auto;
+    }
+    .x-block-middle {
+      flex: 1 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h6:first-child {
+        // display: block;
+        // float: left;
+        // padding: 20px 0 0 45px;
+        flex: 1 1 50%;
+        margin: 40px 70px;
+      }
+      h6:last-child {
+        // display: block;
+        // float: right;
+        // padding: 20px 35px 0 0;
+        // max-width: 200px;
+        flex: 1 1 50%;
+        margin: 40px 70px;
+      }
+    }
+    .x-block-bottom {
+      // display: block;
+      // clear: both;
+      // text-align: center;
+      // padding-top: 30px;
+      max-width: 200px;
+      flex: 0 1 auto;
+    }
+    @media screen and (max-width: 534px) {
+      font-size: 13px;
+      line-height: 21px;
+      .blog-content-block-top {
+        // padding-top: 34px;
+      }
+    }
+  }
+}
+
+#spaces-description {
+  background-color: $tan;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+
+#spaces-parallax {
+  @include parallax-blocks;
+  .block-top h6 {
+    line-height: 1.75;
+  }
+  .block-bottom {
+    background-color: rgba($lightestgray, 0.8);
+    &:after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      right: -12px;
+      width: 24px;
+      height: 24px;
+      background-image: url(../../images/Parallax_X_24.png);
+      background-image: url(../../images/Parallax_X_24.svg);
+      background-size: 24px;
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+  }
+  h4 {
+    line-height: 39px;
+  }
+  @media screen and (max-width: 543px) {
+    .block-bottom {
+      background-color: rgba($lightestgray, 0.8);
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+#spaces-parallax {
+  form {
+    max-width: 360px;
+    margin-top: 3rem;
+  }
+  .gfield_label,
+  .gfield_required,
+  .gform_wrapper .gfield_label {
+    display: none;
+  }
+  .hide_label .gfield_label {
+    visibility: hidden;
+  }
+
+  input[type="text"] {
+    border: none;
+    border-bottom: solid 1px $medgray;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0;
+    padding-bottom: 2px;
+    text-indent: 10px;
+    font-family: $cardo;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    color: $black;
+    &::placeholder {
+      color: $black;
+    }
+  }
+
+  input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: $white;
+    font-family: $fjalla;
+    font-size: 10px;
+    color: $black;
+    letter-spacing: 1px;
+    padding: 15px 45px;
+    border: 0;
+    text-transform: uppercase;
+  }
+}

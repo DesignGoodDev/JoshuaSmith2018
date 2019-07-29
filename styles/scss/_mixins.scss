@@ -1,0 +1,94 @@
+@mixin background-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin parallax {
+  height: 600px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  @media screen and (max-width: 480px) {
+    height: 300px;
+    background-attachment: scroll;
+  }
+}
+
+@mixin screen-reader {
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute!important;
+  width: 1px;
+  word-wrap: normal!important;
+}
+
+@mixin parallax-blocks {
+  // height: 700px;
+  height: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  .boxes-content {
+    margin: 0 auto;
+    width: 800px;
+    flex: 0 0 auto;
+    h4 {
+      line-height: 1.5;
+    }
+  }
+  .block-top,
+  .block-bottom {
+    clear: both;
+    width: 50%;
+    box-sizing: border-box;
+    // padding: 2rem 2rem 1rem;
+    padding: 2rem;
+    position: relative;
+  }
+  .block-top {
+    float: right;
+    background-color: rgba($peach, 0.85);
+    bottom: -1.5rem;
+  }
+  .block-bottom {
+    float: left;
+    background-color: rgba($peach, 0.85);
+    top: -1.5rem;
+  }
+  @media screen and (max-width: 480px) {
+    background-attachment: scroll;
+  }
+  @media screen and (max-width: 767px) {
+    .boxes-content {
+      flex: 1 1 auto;
+    }
+  }
+  @media screen and (max-width: 543px) {
+    height: auto;
+    .block-top,
+    .block-bottom {
+      float: none;
+      margin: 30px auto;
+      padding-left: 40px;
+      font-size: 17px;
+      line-height: 25px;
+      width: 100%;
+      max-width: 245px;
+      top: 0;
+      bottom: 0;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .block-top,
+    .block-bottom {
+      // padding-left: 10px;
+      // padding-right: 5px;
+      padding: 2rem;
+      line-height: 23px;
+    }
+  }
+}

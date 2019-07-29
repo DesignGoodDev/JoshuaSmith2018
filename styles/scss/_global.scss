@@ -1,0 +1,303 @@
+/* C O L O R S */
+$white: #ffffff;
+$black: #000000;
+// $lightestgray: #b9c2c1;
+$lightestgray: #F0F3F3;
+$lightgray: #a9b6b6;
+$medgray: #8a8a8a;
+
+$blue: #5c687a;
+$peach: #e5d3c9;
+$robin: #cee8e6;
+
+$cream: #f7f7f7;
+$lighttan: #e6e1dc;
+$tan: #eadeca;
+$tantext: #ddd7d1;
+
+.robin {
+	color: $robin;
+}
+.black {
+	color: $black;
+}
+.blue {
+	color: $blue;
+}
+.light-gray {
+	color: $lightgray;
+}
+.med-gray {
+	color: $medgray;
+}
+.peach {
+	color: $peach;
+}
+.tan {
+	color: $tan;
+}
+.tan-text {
+	color: $tantext;
+}
+.white {
+	color: $white;
+}
+
+.blue-link {
+	display: inline-block;
+	background-color: $blue;
+	color: $tantext;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 12px;
+	line-height: 1;
+	text-transform: uppercase;
+	padding: 16px 24px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	letter-spacing: 1px;
+}
+.blue-link:hover {
+	color: $white;
+}
+
+// T Y P O G R A P H Y
+$cardo: "Cardo", serif;
+$dosis: "Dosis", sans-serif;
+$fjalla: "Fjalla One", sans-serif;
+
+.cardo {
+	font-family: $cardo;
+}
+.cardo-it {
+	font-family: $cardo;
+	font-style: italic;
+}
+.dosis {
+	font-family: $dosis;
+}
+.fjalla {
+	font-family: $fjalla;
+	letter-spacing: 1px;
+}
+body {
+	background-color: $white;
+	font-family: $dosis;
+	font-size: 16px;
+	line-height: 1.25;
+	color: $black;
+	font-weight: 400;
+}
+
+h1 {
+	font-family: $fjalla;
+	font-size: 38px;
+  line-height: 44px;
+	margin-top: 0;
+	text-transform: uppercase;
+  margin-bottom: 30px;
+}
+h2 {
+	font-family: $cardo;
+	font-style: italic;
+  font-size: 38px;
+  line-height: 44px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+h3 {
+	font-family: $cardo;
+	font-style: italic;
+	font-size: 32px;
+  margin-bottom: 2rem;
+}
+h4 {
+	font-family: $fjalla;
+	font-size: 20px;
+  line-height: 1.75;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  // margin-left: auto;
+  // margin-right: auto;
+  margin-bottom: 1rem;
+}
+/// maybe h5 should be cardo instead? 24px>
+h5 {
+	font-family: $fjalla;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+h6 {
+  font-family: $cardo;
+  font-size: 14px;
+	line-height: 1.5;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	margin-bottom: 1rem;
+}
+
+
+p {
+  font-family: $dosis;
+  font-size: 16px;
+  margin: 0 0 17px;
+  line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+  color: $blue;
+  &:hover {
+    text-decoration: none;
+    color: $robin;
+  }
+}
+
+strong {
+	font-weight: 700
+}
+
+em {
+	font-style: italic
+}
+
+.caps {
+  text-transform: uppercase;
+}
+.textcenter {
+	text-align: center;
+}
+
+// S E C T I O N  T I T L E S
+.section-title {
+	display: flex;
+	max-width: 340px;
+	min-height: 37px;
+	margin: 0 auto 2rem;
+	background-image: url(../../images/SectionTitleLight-top.svg), url(../../images/SectionTitleLight-bottom.svg);
+	background-repeat: no-repeat, no-repeat;
+	background-position: top center, bottom center;
+	padding-top: 31px;
+	text-align: center;
+	padding-bottom: 30px;
+	justify-content: center;
+	align-items: center;
+}
+.section-title.gray {
+	display: flex;
+	max-width: 340px;
+	min-height: 37px;
+	margin: 0 auto 2rem;
+	background-image: url(../../images/SectionTitle-top.svg), url(../../images/SectionTitle-bottom.svg);
+	background-repeat: no-repeat, no-repeat;
+	background-position: top center, bottom center;
+	padding-top: 31px;
+	text-align: center;
+	padding-bottom: 30px;
+	justify-content: center;
+	align-items: center;
+}
+.section-title h6 {
+	font-size: 16px;
+	margin-bottom: 0;
+}
+
+h3.line {
+	position: relative;
+	text-align: center;
+	&::after {
+    content: "";
+    display: block;
+    width: 340px;
+    margin: 0 auto;
+    padding-top: 7px;
+    border-bottom: solid 1px $tantext;
+}
+}
+
+h4.borders {
+	border-top: solid 1px $lighttan;
+	border-bottom: solid 1px $lighttan;
+	padding-top: 16px;
+	padding-bottom: 13px;
+	clear: both;
+	max-width: 360px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// L A Y O U T  R U L E S
+.center {
+	margin: 0 auto;
+}
+
+[class*="max"] {
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.max600 {
+	max-width: 600px;
+}
+
+.max480 {
+	max-width: 480px;
+}
+
+.max680 {
+	max-width: 680px;
+}
+
+.max1024 {
+	max-width: 1024px;
+}
+
+.adamrob_parallax_posttitle {
+	display: none;
+}
+
+.error404 {
+	#page-heading {
+		background-color: $lightestgray;
+		height: auto !important;
+		padding-top: 2rem;
+		#page-heading-content {
+			display: flex;
+			align-items: flex-end !important;
+			justify-content: flex-start;
+			max-width: 1024px;
+		}
+	}
+}
+.search-results {
+	article.loop-entry {
+		margin-bottom: 2rem;
+		&.clearfix {
+			max-width: none;
+			&:nth-child(odd) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+.page-template-default {
+	#page-heading {
+		min-height: 0;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		background-color: $lightestgray;
+	}
+	.post {
+		max-width: 1104px;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		width: auto;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
