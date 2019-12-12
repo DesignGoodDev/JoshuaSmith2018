@@ -15,6 +15,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
+    <meta name="p:domain_verify" content="37e6696366e2eddb5d1ba28f15f834e3"/>
 	<title><?php wp_title(''); ?><?php if( wp_title('', false) ) { echo ' |'; } ?> <?php bloginfo('name'); ?></title>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <?php if ( wpex_get_data('custom_favicon') ) : ?>
