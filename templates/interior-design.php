@@ -167,37 +167,7 @@
                         </ul>
                     <?php endif; ?>
                 </div>
-
-                <hr class="separator">
-
             </section>
-
-            <section id="interior-2-2">
-                <div id="interior-2-content" class="center">
-                    <h2 class="cardo-it"><?php the_field('interior-2-heading'); ?></h2>
-                </div>
-
-                <div id="interior-2-content" class="max600">
-                    <h4><?php the_field('interior-2-heading2'); ?></h4>
-                </div>
-
-                <div id="interior-2-1-content" class="center max480 cardo">
-                    <div id="interior-2-1">
-                        <div id="interior-2-1-left" class="equal-columns-set-1">
-                            <p><?php the_field('interior-2-list-left-item1'); ?></p>
-                            <p><?php the_field('interior-2-list-left-item2'); ?></p>
-                            <p><?php the_field('interior-2-list-left-item3'); ?></p>
-                        </div>
-
-                        <div id="interior-2-1-right" class="equal-columns-set-1">
-                            <p><?php the_field('interior-2-list-right-item1'); ?></p>
-                            <p><?php the_field('interior-2-list-right-item2'); ?></p>
-                            <p><?php the_field('interior-2-list-right-item3'); ?></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
 
 
             <section id="interior-3">
