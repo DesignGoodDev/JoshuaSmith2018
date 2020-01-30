@@ -14,7 +14,7 @@
 
             <?php get_template_part( 'coaching-page-header' ); ?>
 
-            <section id="coaching-1">
+            <section class="section--padded">
 
                 <div class="center text-center max840">
 

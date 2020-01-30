@@ -10,6 +10,7 @@
     font-style: normal;
     text-transform: uppercase;
     font-size: 26px;
+    line-height: 1.25;
     letter-spacing: 1px;
     margin-bottom: 16px;
   }
@@ -35,10 +36,114 @@
 }
 
 .secondary-header--coaching {
+
+  background-position: top;
+  background-repeat: no-repeat;
+
   h2, h3, h4 {
-    margin-bottom: 0;
+    margin-bottom: 6px;
   }
+
   #page-heading-inner {
     padding: 30px 30px;
   }
+
+  @media (min-width: 768px) {
+    &#page-heading {
+      background-position: center;
+      max-height: 500px;
+    }
+  }
+}
+
+.section--padded {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.coaching-page .section--padded {
+  form {
+    margin: 0 auto;
+    text-align: center;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // align-items: center;
+  }
+
+  label {
+		@include screen-reader;
+  }
+
+  .gform_body {
+    width: auto;
+    flex: 1 0 auto;
+
+    ul.gform_fields {
+      // display: flex;
+
+      li.gfield {
+        margin-right: 0.5rem;
+        // flex: 1 0 auto;
+
+        input {
+          border: none;
+          border-bottom: 1px solid $blue;
+          border-radius: 0;
+          background-color: transparent;
+          padding: 0;
+          padding-bottom: 2px;
+          text-indent: 10px;
+          font-family: $cardo !important;
+          font-size: 14px;
+          line-height: normal;
+          font-weight: 400;
+          font-style: italic;
+          color: $black;
+
+          &::placeholder {
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+
+  .gform_footer {
+    width: auto;
+    flex: 0 1 auto;
+
+    input[type="submit"] {
+      background-color: $blue;
+      color: $white;
+      font-family: $fjalla;
+      font-size: 10px !important;
+      line-height: 1 !important;
+      letter-spacing: 1px;
+      padding: 12px 35px;
+      border: 0;
+      text-transform: uppercase;
+      height: auto !important;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: 641px) {
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      ul.gform_fields {
+        display: flex;
+
+        li.gfield {
+          flex: 1 0 auto;
+        }
+      }
+    }
+
+  }
+
 }
