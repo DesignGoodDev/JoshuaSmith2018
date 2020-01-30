@@ -1,0 +1,44 @@
+.nav--coaching {
+  background-color: $white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.coaching-page {
+  h2 {
+    font-family: $fjalla;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    font-family: $fjalla;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+
+  h4 {
+    font-family: $dosis;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.125;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+  }
+}
+
+.secondary-header--coaching {
+  h2, h3, h4 {
+    margin-bottom: 0;
+  }
+  #page-heading-inner {
+    padding: 30px 30px;
+  }
+}
