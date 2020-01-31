@@ -109,16 +109,15 @@ add_filter('excerpt_more', 'new_excerpt_more');
 function jsi_password_form() {
 	global $post;
 	$label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
-	$o = '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post" class="post-password-form"><p>
-	' . __( "To view available positions, please enter the password below:" ) . '
-	</p><p><label for="' . $label . '">' . __( "Password:" ) . ' </label><input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" /></p><input type="submit" name="Submit" value="' . esc_attr__( "SUBMIT" ) . '" />
-	</form>
-	';
-	return $o;
+	$output = '<div class="gate"><form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post" class="post-password-form"><p>
+	' . __( "" ) . '
+	</p><p><label for="' . $label . '">' . __( "Password:" ) . ' </label><input name="post_password" id="' . $label . '" type="password" size="40" maxlength="20" /></p><input type="submit" name="Submit" class="blue-link btn" value="' . esc_attr__( "SUBMIT" ) . '" />
+	</form></div>';
+	return $output;
 }
 add_filter( 'the_password_form', 'jsi_password_form' );
 
-// Adds your styles to the WordPress editor
+// Adds your styles and fonts to the WordPress editor
 // add_action( 'init', 'add_editor_styles' );
 // function add_editor_styles() {
 // 	add_editor_style( 'https://fonts.googleapis.com/css?family=Cardo:400,400italic' );

@@ -16,12 +16,6 @@
 
             <?php the_content(); ?>
 
-            <?php //if ( ! post_password_required() ) : ?>
-
-
-
-            <?php //endif; ?>
-
         </div>
 
     </article>
