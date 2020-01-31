@@ -105,6 +105,19 @@ return '...<br/><a class="more-link" href="'. get_permalink($post->ID) . '"> Rea
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+// Build a login form for password-protected content, used on Coaching pages
+function jsi_password_form() {
+	global $post;
+	$label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
+	$o = '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post" class="post-password-form"><p>
+	' . __( "To view available positions, please enter the password below:" ) . '
+	</p><p><label for="' . $label . '">' . __( "Password:" ) . ' </label><input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" /></p><input type="submit" name="Submit" value="' . esc_attr__( "SUBMIT" ) . '" />
+	</form>
+	';
+	return $o;
+}
+add_filter( 'the_password_form', 'jsi_password_form' );
+
 // Adds your styles to the WordPress editor
 // add_action( 'init', 'add_editor_styles' );
 // function add_editor_styles() {

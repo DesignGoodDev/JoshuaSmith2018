@@ -73,22 +73,6 @@ $colors:	( white, #ffffff ),
 	}
 }
 
-.blue-link {
-	display: inline-block;
-	background-color: $blue;
-	color: $tantext;
-	font-family: 'Fjalla One', sans-serif;
-	font-size: 12px;
-	line-height: 1;
-	text-transform: uppercase;
-	padding: 16px 24px;
-	margin-top: 8px;
-	margin-bottom: 8px;
-	letter-spacing: 1px;
-}
-.blue-link:hover {
-	color: $white;
-}
 
 // T Y P O G R A P H Y
 $cardo: "Cardo", serif;
@@ -197,6 +181,48 @@ em {
 .textcenter,
 .text-center {
 	text-align: center;
+}
+
+// B U T T O N S
+.blue-link {
+	display: inline-block;
+	background-color: $blue;
+	color: $tantext;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 12px;
+	line-height: 1;
+	text-transform: uppercase;
+	padding: 16px 24px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	letter-spacing: 1px;
+}
+.blue-link:hover {
+	color: $white;
+}
+
+.wp-block-button__link,
+.button, .btn {
+	display: inline-block;
+	font-family: $fjalla;
+	font-size: 12px;
+	line-height: 1;
+	text-transform: uppercase;
+	padding: 16px 24px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	letter-spacing: 1px;
+	transition: opacity 250ms ease;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.wp-block-button__link.has-blue-color {
+	&:hover {
+		color: $blue;
+	}
 }
 
 // S E C T I O N  T I T L E S

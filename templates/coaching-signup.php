@@ -14,11 +14,13 @@
 
             <?php get_template_part( 'coaching-page-header' ); ?>
 
-            <?php if ( ! post_password_required() ) : ?>
+            <?php the_content(); ?>
 
-                <?php the_content(); ?>
+            <?php //if ( ! post_password_required() ) : ?>
 
-            <?php endif; ?>
+
+
+            <?php //endif; ?>
 
         </div>
 
