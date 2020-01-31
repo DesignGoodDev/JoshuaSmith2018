@@ -104,3 +104,82 @@ function new_excerpt_more($more) {
 return '...<br/><a class="more-link" href="'. get_permalink($post->ID) . '"> Read More</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+// Adds your styles to the WordPress editor
+// add_action( 'init', 'add_editor_styles' );
+// function add_editor_styles() {
+// 	add_editor_style( 'https://fonts.googleapis.com/css?family=Cardo:400,400italic' );
+// 	add_editor_style( 'https://fonts.googleapis.com/css?family=Dosis:400,700' );
+// 	add_editor_style( 'https://fonts.googleapis.com/css?family=Fjalla+One' );
+// 	add_editor_style( get_template_directory_uri() . '/styles/css/style.css' );
+// }
+
+function custom_block_colors() {
+	// Disable Custom Colors
+	add_theme_support( 'disable-custom-colors' );
+
+	// Add our own Color Palette
+	add_theme_support( 'editor-color-palette', array(
+		array(
+			'name'	=> 'White',
+			'slug'	=> 'white',
+			'color'	=> '#ffffff',
+		),
+		array(
+			'name'	=> 'Black',
+			'slug'	=> 'black',
+			'color'	=> '#000000',
+		),
+		array(
+			'name'	=> 'Lightest Gray',
+			'slug'	=> 'lightestgray',
+			'color'	=> '#F0F3F3',
+		),
+		array(
+			'name'	=> 'Light Gray',
+			'slug'	=> 'lightgray',
+			'color'	=> '#a9b6b6',
+		),
+		array(
+			'name'	=> 'Medium Gray',
+			'slug'	=> 'medgray',
+			'color'	=> '#8a8a8a',
+		),
+		array(
+			'name'	=> 'Blue',
+			'slug'	=> 'blue',
+			'color'	=> '#5c687a',
+		),
+		array(
+			'name'	=> 'Peach',
+			'slug'	=> 'peach',
+			'color'	=> '#e5d3c9',
+		),
+		array(
+			'name'	=> 'Robin',
+			'slug'	=> 'robin',
+			'color'	=> '#cee8e6',
+		),
+		array(
+			'name'	=> 'Cream',
+			'slug'	=> 'cream',
+			'color'	=> '#f7f7f7',
+		),
+		array(
+			'name'	=> 'Light Tan',
+			'slug'	=> 'lighttan',
+			'color'	=> '#e6e1dc',
+		),
+		array(
+			'name'	=> 'Tan',
+			'slug'	=> 'tan',
+			'color'	=> '#eadeca',
+		),
+		array(
+			'name'	=> 'Tan Text',
+			'slug'	=> 'tantext',
+			'color'	=> '#ddd7d1',
+		),
+	) );
+}
+add_action( 'after_setup_theme', 'custom_block_colors' );

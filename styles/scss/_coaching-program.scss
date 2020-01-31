@@ -13,6 +13,13 @@
     line-height: 1.25;
     letter-spacing: 1px;
     margin-bottom: 16px;
+
+    em {
+      font-family: $cardo;
+      font-style: italic;
+      text-transform: none;
+      letter-spacing: normal;
+    }
   }
 
   h3 {
@@ -22,6 +29,13 @@
     font-size: 22px;
     letter-spacing: 1px;
     margin-bottom: 16px;
+
+    em {
+      font-family: $cardo;
+      font-style: italic;
+      text-transform: none;
+      letter-spacing: normal;
+    }
   }
 
   h4 {
@@ -56,6 +70,18 @@
   }
 }
 
+.coaching-page {
+  #page-heading-inner {
+    text-align: center;
+  }
+
+  &.coaching-page--relationship {
+    #page-heading-inner {
+      text-align: left;
+    }
+  }
+}
+
 .section--padded {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -65,14 +91,10 @@
   form {
     margin: 0 auto;
     text-align: center;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    // align-items: center;
   }
 
   label {
-		@include screen-reader;
+    @include screen-reader;
   }
 
   .gform_body {
@@ -80,11 +102,9 @@
     flex: 1 0 auto;
 
     ul.gform_fields {
-      // display: flex;
 
       li.gfield {
         margin-right: 0.5rem;
-        // flex: 1 0 auto;
 
         input {
           border: none;
@@ -146,4 +166,31 @@
 
   }
 
+}
+
+.coaching-page {
+  .wp-block-group {
+    &.section--padded {
+      .wp-block-group__inner-container {
+        max-width: 840px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .has-blue-background-color,
+  .has-black-background-color {
+    .gform_body ul.gform_fields li.gfield input {
+      border-bottom: 1px solid $white;
+      color: $white;
+
+      &::placeholder {
+        color: $white;
+      }
+    }
+    .gform_footer input[type="submit"] {
+      background-color: $white;
+      color: $blue;
+    }
+  }
 }

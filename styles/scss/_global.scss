@@ -43,6 +43,36 @@ $tantext: #ddd7d1;
 	color: $white;
 }
 
+// Gutenberg color options
+// -- see editor-color-palette in functions.php
+$colors:	( white, #ffffff ),
+					( black, #000000 ),
+					( lightestgray, #F0F3F3 ),
+					( lightgray, #a9b6b6 ),
+					( medgray, #8a8a8a ),
+					( blue, #5c687a ),
+					( peach, #e5d3c9 ),
+					( robin, #cee8e6 ),
+					( cream, #f7f7f7 ),
+					( lighttan, #e6e1dc ),
+					( tan, #eadeca ),
+					( tantext, #ddd7d1 );
+
+
+/* Color Options
+--------------------------------------------- */
+
+@each $name, $color in $colors {
+
+	.has-#{$name}-color {
+		color: $color;
+	}
+
+	.has-#{$name}-background-color {
+		background-color: $color;
+	}
+}
+
 .blue-link {
 	display: inline-block;
 	background-color: $blue;

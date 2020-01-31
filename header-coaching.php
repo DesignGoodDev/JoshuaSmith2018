@@ -23,9 +23,6 @@
     <?php endif; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <?php wp_head(); ?>
-    <link href="https://fonts.googleapis.com/css?family=Cardo:400,400italic&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
 </head>
 
 <!-- Begin Body -->

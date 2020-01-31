@@ -15,6 +15,11 @@ function wpex_load_scripts() {
 	*******************/
 	wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/styles/css/style.css', array(), filemtime( get_stylesheet_directory() . '/styles/css/style.css' ) );
 	wp_enqueue_style( 'google-font-droid-serif', 'https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' );
+
+	wp_enqueue_style( 'google-font-cardo', 'https://fonts.googleapis.com/css?family=Cardo:400,400italic' );
+	wp_enqueue_style( 'google-font-dosis', 'https://fonts.googleapis.com/css?family=Dosis:400,700' );
+	wp_enqueue_style( 'google-font-fjalla-one', 'https://fonts.googleapis.com/css?family=Fjalla+One' );
+
 	wp_enqueue_style( 'prettyPhoto', get_template_directory_uri() . '/styles/css/prettyphoto.css', 'style' );
 	wp_enqueue_style( 'ImageComparisonSlider', get_template_directory_uri() . '/styles/css/ImageComparisonSlider.css', 'style' );
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/styles/css/font-awesome.min.css', 'style' );
