@@ -109,9 +109,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
 function jsi_password_form() {
 	global $post;
 	$label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
-	$output = '<div class="gate"><form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post" class="post-password-form"><p>
-	' . __( "" ) . '
-	</p><p><label for="' . $label . '">' . __( "Password:" ) . ' </label><input name="post_password" id="' . $label . '" type="password" size="40" maxlength="20" /></p><input type="submit" name="Submit" class="blue-link btn" value="' . esc_attr__( "SUBMIT" ) . '" />
+	$output = __( "<div class='gate'><h2><em>Congratulations on taking the first step to finding the</em><br> relationship of your dreams.</h2><p>Please enter your password below, and let's get started!</p>" ) . '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post" class="post-password-form"><label class="sr-only" for="' . $label . '">' . __( "Password:" ) . ' </label><input name="post_password" id="' . $label . '" placeholder="Password" type="password" size="40" maxlength="20" /><input type="submit" name="Submit" class="blue-link btn" value="' . esc_attr__( "SUBMIT" ) . '" />
 	</form></div>';
 	return $output;
 }

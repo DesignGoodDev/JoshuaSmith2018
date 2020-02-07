@@ -211,24 +211,56 @@
   }
 }
 
+.coaching-page {
+  a.has-blue-color.has-lightestgray-background-color {
+    color: $blue !important;
+  }
+}
+
 // Password-Protected Form
 .gate {
   padding: 3rem 20px;
   display: flex;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
   text-align: center;
 
-  label {
-    font-family: $dosis;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    display: block;
-    margin-bottom: 6px;
+  h2 {
+    margin-bottom: 24px;
+  }
+
+  .post-password-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input[type="password"] {
+    border: 0;
+    border-bottom: 1px solid $blue;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0;
+    padding-bottom: 2px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-family: $cardo !important;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    color: $medgray;
+
+    &::placeholder {
+      color: $medgray;
+    }
   }
 
   input[type="submit"] {
-    padding: 10px 16px 9px;
+    padding: 14px 32px 13px;
     color: $white;
   }
 }

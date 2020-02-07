@@ -33,7 +33,7 @@
     <div class="nav--coaching">
         <div id="logo">
             <a href="<?php bloginfo( 'url' ); ?>/" title="<?php bloginfo( 'name' ); ?>">
-                <img src="<?php bloginfo('template_directory'); ?>/images/JS_Logo-No-Tagline.svg" width="253" alt="<?php bloginfo( 'name' ); ?>" />
+                <img src="<?php bloginfo('template_directory'); ?>/images/Joshua-Smith-Wordmark-MBSH.png" width="253" alt="<?php bloginfo( 'name' ); ?>" />
             </a>
         </div><!--  /logo -->
     </div>

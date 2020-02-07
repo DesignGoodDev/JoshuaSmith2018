@@ -366,3 +366,14 @@ h4.borders {
 		padding-right: 20px;
 	}
 }
+
+.sr-only,
+.sronly,
+.label--hidden {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
