@@ -1308,16 +1308,34 @@ li.box-text p {
 
 #interior-2-content .press-items {
 	display: flex;
+	align-items: center;
 	justify-content: center;
-	padding-bottom: 43px;
+	padding-bottom: 40px;
+	width: 90%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media (max-width: 992px) {
+		flex-wrap: wrap;
+	}
 }
 
 #interior-2-content .press-item {
-	width: 25%;
-	max-width: 279px;
+	flex: 0 1 auto;
+	max-width: 240px;
 	padding-left: 12px;
 	padding-right: 12px;
+	margin-bottom: 20px;
 	box-sizing: border-box;
+
+	&.verywide {
+		max-width: 280px;
+	}
+
+	&.square {
+		max-width: 160px;
+	}
 }
 
 #interior-2-content #press-item-content {

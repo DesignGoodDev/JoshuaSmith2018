@@ -142,26 +142,16 @@
                     <h2 class="cardo-it"><?php the_field('interior_press_heading'); ?></h2>
                     <?php if( have_rows('press_items') ): ?>
                         <ul class="press-items">
-                        <?php	$PressCount = 1; ?>
                         <?php while( have_rows('press_items') ): the_row();
                             // vars
                             $image = get_sub_field('press_item_image');
-                            $title = get_sub_field('press_item_title');
-                            $linkint = get_sub_field('press_item_file');
-                            $link = get_sub_field('press_item_link');
+                            $size = get_sub_field('press_item_size');
                             ?>
 
-                            <li class="press-item">
+                            <li class="press-item <?php echo $size; ?>">
                                 <div id="press-item-top">
                                     <img src="<?php echo $image; ?>" />
                                 </div><!-- #press-item-top -->
-
-                                <div id="press-item-content" class="cardo">
-                                    <a href="<?php echo $linkint; ?><?php echo $link; ?>" target="_blank"><em><?php echo $PressCount;
-
-                                $PressCount = $PressCount + 1; ?></em>.<br /><?php echo $title; ?></a>
-
-                                </div><!-- #press-item-content -->
                             </li>
                         <?php endwhile; ?>
                         </ul>
