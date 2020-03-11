@@ -16,6 +16,9 @@
 
             <section id="coaching-1">
                 <div class="center max680">
+                    <div class="video-responsive mb-60">
+                        <iframe src="https://player.vimeo.com/video/396947168" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
                     <h3 class="cardo-it blue line"><?php the_field('about_heading_1'); ?></h3>
                     <div class="center textcenter about__text--top">
                         <h6><?php the_field('about_text_1'); ?></h6>

@@ -319,6 +319,20 @@ h4.borders {
 	max-width: 1024px;
 }
 
+// S P A C I N G  H E L P E R S
+.mb-0 {
+	margin-bottom: 0;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+.mb-40 {
+	margin-bottom: 40px;
+}
+.mb-60 {
+	margin-bottom: 60px;
+}
+
 .adamrob_parallax_posttitle {
 	display: none;
 }
@@ -376,4 +390,21 @@ h4.borders {
 	width: 1px;
 	height: 1px;
 	overflow: hidden;
+}
+
+// V I D E O S
+
+.video-responsive {
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+	height: 0;
+
+	iframe {
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+	}
 }
