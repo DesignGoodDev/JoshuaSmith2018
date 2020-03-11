@@ -39,7 +39,14 @@
 
         <section id="home-services">
             <div id="home-services-content" class="center max1024">
-            	<h2 class="textcenter"><?php the_field('services_heading'); ?></h2>
+                <h2 class="textcenter"><?php the_field('services_heading'); ?></h2>
+
+                <!-- <div class="center max680"> -->
+                    <div class="video-responsive mb-60">
+                        <iframe src="https://player.vimeo.com/video/396947168" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                <!-- </div> -->
+
                 <div id="home-services-content-block">
 
                     <div id="home-services-top">
