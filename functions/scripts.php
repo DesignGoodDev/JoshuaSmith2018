@@ -149,7 +149,7 @@ function featured_posts_shortcode() { ?>
 
 		if ( have_posts() ) :
 			while (have_posts()) : the_post(); ?>
-          	<a class="cardo-it" href="<?php the_permalink('') ?>" title="<?php the_title(); ?>"><?php the_field('short_title'); ?></a>
+          	<a class="cardo-it" href="<?php the_permalink(''); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
     <?php endwhile; endif;
   wp_reset_query(); ?>
 </div>
