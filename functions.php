@@ -115,6 +115,13 @@ function jsi_password_form() {
 }
 add_filter( 'the_password_form', 'jsi_password_form' );
 
+// Password-Protection adjustment
+function amend_redirect_hosts($allowed_hosts, $this_host){
+	$allowed_hosts[] = $this_host;
+	return $allowed_hosts;
+}
+add_filter('allowed_redirect_hosts', 'amend_redirect_hosts', 10, 2);
+
 // Adds your styles and fonts to the WordPress editor
 // add_action( 'init', 'add_editor_styles' );
 // function add_editor_styles() {
