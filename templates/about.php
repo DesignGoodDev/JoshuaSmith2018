@@ -19,7 +19,9 @@
                     </div>
 
                     <div id="about-3-content-1" class="center textcenter">
-                        <h3 class="blue line"><?php the_field('heading_2'); ?></h3>
+                        <?php if( get_field('heading_2') ): ?>
+                            <h3 class="blue line"><?php the_field('heading_2'); ?></h3>
+                        <?php endif ?>
                         <?php the_field('text_2'); ?>
                     </div>
 
