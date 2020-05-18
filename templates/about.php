@@ -48,38 +48,29 @@
                 <h3 class="blue line"><?php the_field('press_heading'); ?></h3>
                 <?php if( have_rows('press_items') ): ?>
                     <ul class="press-items">
-                    <?php	$PressCount = 1; ?>
+                    <?php	//$PressCount = 1; ?>
                     <?php while( have_rows('press_items') ): the_row();
                         // vars
                         $image = get_sub_field('press_item_image');
-                        $title = get_sub_field('press_item_title');
-                        $linkint = get_sub_field('press_item_file');
-                        $link = get_sub_field('press_item_link');
+                        //$title = get_sub_field('press_item_title');
+                        //$linkint = get_sub_field('press_item_file');
+                        //$link = get_sub_field('press_item_link');
                         ?>
                         <li class="press-item">
                             <div class="press-item-top">
                                 <img src="<?php echo $image; ?>" />
                             </div>
-
-                            <div class="press-item-content">
-                                <?php if( $link ): ?>
-                                <a href="<?php echo $link; ?>" target="_blank">
-                                    <em><?php echo $PressCount; ?></em>.
-                                    <br />
-                                    <?php echo $title; ?></a>
-                                    <?php $PressCount = $PressCount + 1; ?>
-                                <?php elseif( $linkint): ?>
-                                    <p><em><?php echo $PressCount; ?>.</em>
-                                    <br />
-                                    <?php echo $title; ?>
-                                    </p>
-                                    <?php $PressCount = $PressCount + 1; ?>
-                                <?php endif; ?>
-                            </div>
                         </li>
                     <?php endwhile; ?>
                     </ul>
                 <?php endif; ?>
+            </section>
+
+            <section id="about-4">
+                <div id="about-4-content-1" class="center textcenter">
+                    <h3 class="blue line"><?php the_field('heading_4'); ?></h3>
+                    <?php the_field('text_4'); ?>
+                </div>
             </section>
 
         </div>
