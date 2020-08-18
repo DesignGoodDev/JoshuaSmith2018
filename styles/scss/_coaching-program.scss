@@ -198,6 +198,14 @@
   .shader--gray {
     padding: 28px;
     background-color: $lightgray;
+
+    & > .wp-block-group__inner-container > .wp-block-columns {
+      margin-bottom: 0;
+
+      .wp-block-column .wp-block-columns:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .wp-block-column {
