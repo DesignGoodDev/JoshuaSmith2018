@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=Dosis:wght@400;700&family=Fjalla+One&display=swap');
+
+// @import "resets";
+@import "mixins";
+@import "global";
+@import "original";
+@import "style-new";
+// @import "nav";
+// @import "home";
+// @import "about";
+@import "coaching";
+// @import "experiences";
+// @import "results";
+// @import "sacredspaces";
+// @import "contact";
+// @import "blog";
+@import "coaching-program";
+
+.editor-styles-wrapper {
+  font-family: $dosis !important;
+  // ul {
+
+  // }
+}
+.editor-post-title {
+  font-family: $fjalla;
+}

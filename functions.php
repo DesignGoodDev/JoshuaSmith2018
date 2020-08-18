@@ -122,16 +122,16 @@ function amend_redirect_hosts($allowed_hosts, $this_host){
 }
 add_filter('allowed_redirect_hosts', 'amend_redirect_hosts', 10, 2);
 
-// Adds your styles and fonts to the WordPress editor
-// add_action( 'init', 'add_editor_styles' );
-// function add_editor_styles() {
-// 	add_editor_style( 'https://fonts.googleapis.com/css?family=Cardo:400,400italic' );
-// 	add_editor_style( 'https://fonts.googleapis.com/css?family=Dosis:400,700' );
-// 	add_editor_style( 'https://fonts.googleapis.com/css?family=Fjalla+One' );
-// 	add_editor_style( get_template_directory_uri() . '/styles/css/style.css' );
-// }
 
-function custom_block_colors() {
+function custom_block_settings() {
+
+	// Enable Custom Editor Styles
+	add_theme_support( 'editor-styles' );
+	add_editor_style( 'editor-styles.css' );
+
+	// Disable Custom Font Sizes
+	add_theme_support( 'disable-custom-font-sizes' );
+
 	// Disable Custom Colors
 	add_theme_support( 'disable-custom-colors' );
 
@@ -199,4 +199,16 @@ function custom_block_colors() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'custom_block_colors' );
+add_action( 'after_setup_theme', 'custom_block_settings' );
+
+/**
+ * Block Editor Enqueues
+ */
+function jsi_block_editor_enqueues() {
+
+	// wp_enqueue_style( 'jsi-block-editor-styles', get_template_directory_uri() . '/styles/css/editor-styles.css' , array(), filemtime( get_template_directory() . '/styles/css/editor-styles.css' ), 'all' );
+
+	wp_enqueue_script( 'jsi-block-editor-scripts', get_template_directory_uri() . '/js/editor.js', array( 'wp-blocks', 'wp-dom' ), filemtime( get_template_directory() . '/js/editor.js' ), true);
+
+}
+add_action( 'enqueue_block_editor_assets', 'jsi_block_editor_enqueues', 1, 1 );
