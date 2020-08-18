@@ -185,20 +185,26 @@
 }
 
 .coaching-page {
-  .wp-block-group {
+  > .wp-block-group {
     padding: 3rem 20px;
 
     .wp-block-group__inner-container {
       max-width: 840px;
       margin: 0 auto;
     }
+  }
 
-    // &.section--padded {
-    //   .wp-block-group__inner-container {
-    //     max-width: 840px;
-    //     margin: 0 auto;
-    //   }
-    // }
+  .shader--gray {
+    padding: 28px;
+    background-color: $lightgray;
+  }
+
+  .wp-block-column {
+    .shader--gray {
+      @media (min-width: 768px) {
+        margin-left: 20px;
+      }
+    }
   }
 
   .has-blue-background-color,
@@ -250,9 +256,17 @@
 .coaching-page {
   figure.wp-block-image.size-full {
     margin: 0;
+  }
 
-    &.parallax {
-
+  .wp-block-cover-image.has-parallax,
+  .wp-block-cover.has-parallax {
+    @media (max-width: 1023px) {
+      background-attachment: scroll;
+    }
+    @media (min-width: 1024px) {
+      min-height: 550px;
+      height: 50vw;
+      max-height: 740px;
     }
   }
 }
