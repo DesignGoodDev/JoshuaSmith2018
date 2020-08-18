@@ -186,12 +186,19 @@
 
 .coaching-page {
   .wp-block-group {
-    &.section--padded {
-      .wp-block-group__inner-container {
-        max-width: 840px;
-        margin: 0 auto;
-      }
+    padding: 3rem 20px;
+
+    .wp-block-group__inner-container {
+      max-width: 840px;
+      margin: 0 auto;
     }
+
+    // &.section--padded {
+    //   .wp-block-group__inner-container {
+    //     max-width: 840px;
+    //     margin: 0 auto;
+    //   }
+    // }
   }
 
   .has-blue-background-color,
@@ -214,6 +221,39 @@
 .coaching-page {
   a.has-blue-color.has-lightestgray-background-color {
     color: $blue !important;
+  }
+
+  ul {
+    // padding-left: 8px;
+
+    li {
+      margin-bottom: 16px;
+
+      &::before {
+        content: '—';
+        padding-right: 6px;
+        // color: $robin;
+      }
+    }
+
+    ul {
+      margin-top: 16px;
+      padding-left: 16px;
+
+      li::before {
+        color: $lightgray;
+      }
+    }
+  }
+}
+
+.coaching-page {
+  figure.wp-block-image.size-full {
+    margin: 0;
+
+    &.parallax {
+
+    }
   }
 }
 
@@ -311,5 +351,26 @@
 
   &.wp-embed-aspect-1-2.wp-block-embed__wrapper {
     padding-top: 200%; // 2 / 1 * 100
+  }
+}
+
+
+
+.testimonials {
+  p {
+    font-family: Cardo, serif;
+  }
+}
+
+.testimonial--no-image {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  *:last-child {
+    margin-bottom: 0;
   }
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Coaching - Relationship Pages
+ * Template Name: Coaching - Landing Pages
  */
 ?>
 
