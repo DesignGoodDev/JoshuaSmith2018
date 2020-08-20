@@ -4,6 +4,14 @@
   padding: 30px 20px;
 }
 
+body.page-template-coaching-signup,
+.page-template-coaching-signup p,
+.page-template-coaching-signup li {
+  font-family: $montserrat;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
 .editor-styles-wrapper,
 .coaching-page {
   h2 {

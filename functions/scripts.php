@@ -19,6 +19,7 @@ function wpex_load_scripts() {
 	wp_enqueue_style( 'google-font-cardo', 'https://fonts.googleapis.com/css?family=Cardo:400,400italic' );
 	wp_enqueue_style( 'google-font-dosis', 'https://fonts.googleapis.com/css?family=Dosis:400,700' );
 	wp_enqueue_style( 'google-font-fjalla-one', 'https://fonts.googleapis.com/css?family=Fjalla+One' );
+	wp_enqueue_style( 'google-font-montserrat', 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 	wp_enqueue_style( 'prettyPhoto', get_template_directory_uri() . '/styles/css/prettyphoto.css', 'style' );
 	wp_enqueue_style( 'ImageComparisonSlider', get_template_directory_uri() . '/styles/css/ImageComparisonSlider.css', 'style' );
