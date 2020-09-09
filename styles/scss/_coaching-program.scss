@@ -338,6 +338,8 @@ body.page-template-coaching-signup,
 
 // embedded videos
 .wp-block-embed {
+  margin: 0 0 1rem;
+
   iframe {
     position: absolute;
     top: 0;
@@ -376,12 +378,16 @@ body.page-template-coaching-signup,
     padding-top: 100%; // 1 / 1 * 100
   }
 
-  &.wp-embed-aspect-9-6.wp-block-embed__wrapper {
+  &.wp-embed-aspect-9-6 .wp-block-embed__wrapper {
     padding-top: 66.66%; // 6 / 9 * 100
   }
 
-  &.wp-embed-aspect-1-2.wp-block-embed__wrapper {
+  &.wp-embed-aspect-1-2 .wp-block-embed__wrapper {
     padding-top: 200%; // 2 / 1 * 100
+  }
+
+  &.wp-embed-aspect-9-16 .wp-block-embed__wrapper {
+    padding-top: 177.77%;
   }
 }
 
