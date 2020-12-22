@@ -191,11 +191,6 @@ main {
   border: 1px solid #52706a;
 }
 
-.site-wrap .gform_wrapper ul.gfield_checkbox li label {
-  padding-top: 4px;
-  padding-left: 4px;
-}
-
 .dg-credit {
   flex: 0 0 100%;
 }
@@ -228,7 +223,7 @@ main {
     grid-column-end: 2;
   }
 
-  .site-wrap .gform_wrapper ul.gform_fields li:nth-child(5) {
+  .site-wrap .gform_wrapper ul.gform_fields li:nth-child(4) {
     grid-row-start: 1;
     grid-row-end: 5;
     grid-column-start: 2;
@@ -350,7 +345,7 @@ main {
 
 @media (min-width: 990px) {
   .site-wrap {
-    padding: 30px;
+    padding: 28px;
     background: #fff;
   }
 

@@ -15,12 +15,12 @@
 
   <section class="landing__header">
     <div class="header__logo">
-      <img src="<?php bloginfo('template_directory'); ?>/images/logo-jsi-landing.svg" width="" alt="<?php bloginfo('name'); ?>" />
+      <img src="<?php bloginfo('template_directory'); ?>/images/logo-jsi-landing--brown.svg" alt="<?php bloginfo('name'); ?>" />
     </div>
     <ul class="landing__socials">
-      <li><a href="https://www.instagram.com/joshuasmithinc/" taret="_blank" rel="noopener noreferrer"><img src="<?php bloginfo('template_directory'); ?>/images/icon-instagram.svg" width="" alt="Instagram Icon" /></a></li>
-      <li><a href="https://www.facebook.com/joshuasmithinc/" taret="_blank" rel="noopener noreferrer"><img src="<?php bloginfo('template_directory'); ?>/images/icon-facebook.svg" width="" alt="Facebook Icon" /></a></li>
-      <li><a href="#sign-up"><img src="<?php bloginfo('template_directory'); ?>/images/icon-email_sign_up.svg" width="" alt="Newsletter Signup Icon" /></a></li>
+      <li><a href="https://www.instagram.com/joshuasmithinc/" taret="_blank" rel="noopener noreferrer"><img src="<?php bloginfo('template_directory'); ?>/images/icon-instagram.svg" alt="Instagram Icon" /></a></li>
+      <li><a href="https://www.facebook.com/joshuasmithinc/" taret="_blank" rel="noopener noreferrer"><img src="<?php bloginfo('template_directory'); ?>/images/icon-facebook.svg" alt="Facebook Icon" /></a></li>
+      <li><a href="#sign-up"><img src="<?php bloginfo('template_directory'); ?>/images/icon-email_sign_up.svg" alt="Newsletter Signup Icon" /></a></li>
     </ul>
     <div class="header__featured-image">
       <?php echo $featured_img; ?>
@@ -40,9 +40,9 @@
 
   <aside class="landing__aside">
     <ul class="landing__socials">
-      <li><a href="https://www.instagram.com/joshuasmithinc/" taret="_blank" rel="noopener noreferrer"><img src="<?php bloginfo('template_directory'); ?>/images/icon-instagram.svg" width="" alt="Instagram Icon" /></a></li>
-      <li><a href="https://www.facebook.com/joshuasmithinc/" taret="_blank" rel="noopener noreferrer"><img src="<?php bloginfo('template_directory'); ?>/images/icon-facebook.svg" width="" alt="Facebook Icon" /></a></li>
-      <li><a href="#sign-up"><img src="<?php bloginfo('template_directory'); ?>/images/icon-email_sign_up.svg" width="" alt="Newsletter Signup Icon" /></a></li>
+      <li><a href="https://www.instagram.com/joshuasmithinc/" taret="_blank" rel="noopener noreferrer"><img src="<?php bloginfo('template_directory'); ?>/images/icon-instagram.svg" alt="Instagram Icon" /></a></li>
+      <li><a href="https://www.facebook.com/joshuasmithinc/" taret="_blank" rel="noopener noreferrer"><img src="<?php bloginfo('template_directory'); ?>/images/icon-facebook.svg" alt="Facebook Icon" /></a></li>
+      <li><a href="#sign-up"><img src="<?php bloginfo('template_directory'); ?>/images/icon-email_sign_up.svg" alt="Newsletter Signup Icon" /></a></li>
     </ul>
   </aside>
 
