@@ -380,12 +380,6 @@ main {
   }
 }
 
-@media (min-width: 1860px) {
-  .overlap .wp-block-group__inner-container {
-    margin-bottom: -20%;
-  }
-}
-
 @media (min-width: 2000px) {
   .overlap .wp-block-group__inner-container {
     margin-bottom: -32%;
